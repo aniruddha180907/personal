@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Love ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    min-height:100vh;
+    background:linear-gradient(-45deg,#ff4d88,#ff758c,#ff8fa3,#ffc2d1);
+    background-size:400% 400%;
+    animation:gradientMove 12s ease infinite;
+    overflow-x:hidden;
+    padding:50px 20px;
+}
+
+@keyframes gradientMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.hearts{
+    position:fixed;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    overflow:hidden;
+    z-index:0;
+}
+
+.heart{
+    position:absolute;
+    color:rgba(255,255,255,0.7);
+    animation:float linear infinite;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(100vh);
+        opacity:0;
+    }
+    20%{
+        opacity:1;
+    }
+    to{
+        transform:translateY(-120px);
+        opacity:0;
+    }
+}
+
+.container{
+    max-width:950px;
+    margin:auto;
+    position:relative;
+    z-index:2;
+}
+
+.card{
+    backdrop-filter:blur(18px);
+    background:rgba(255,255,255,0.15);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:30px;
+    padding:50px;
+    margin-bottom:35px;
+    color:white;
+    box-shadow:0 20px 50px rgba(0,0,0,0.25);
+}
+
+.title{
+    font-family:'Dancing Script',cursive;
+    font-size:5rem;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:1.1rem;
+}
+
+.message{
+    background:rgba(255,255,255,0.08);
+    padding:30px;
+    border-radius:20px;
+    line-height:2;
+}
+
+.highlight{
+    color:#fff4b8;
+    font-weight:bold;
+}
+
+.promise{
+    margin-top:20px;
+    padding:20px;
+    border-left:4px solid white;
+    background:rgba(255,255,255,0.08);
+    border-radius:15px;
+}
+
+.button{
+    margin-top:25px;
+    padding:15px 35px;
+    border:none;
+    border-radius:50px;
+    background:white;
+    color:#ff3b7f;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(255,255,255,0.4);
+}
+
+.hidden{
+    display:none;
+    margin-top:20px;
+    animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.ring{
+    width:180px;
+    height:180px;
+    margin:0 auto 25px;
+    border-radius:50%;
+    border:4px solid rgba(255,255,255,0.4);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    animation:pulse 3s infinite;
+}
+
+.ring span{
+    font-size:5rem;
+}
+
+@keyframes pulse{
+    0%{
+        box-shadow:0 0 0 0 rgba(255,255,255,.4);
+    }
+    70%{
+        box-shadow:0 0 0 30px rgba(255,255,255,0);
+    }
+    100%{
+        box-shadow:0 0 0 0 rgba(255,255,255,0);
+    }
+}
+
+.proposal-title{
+    font-family:'Dancing Script',cursive;
+    font-size:4rem;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.proposal-gif{
+    display:flex;
+    justify-content:center;
+    margin-bottom:30px;
+}
+
+.proposal-gif img{
+    width:100%;
+    max-width:450px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.25);
+}
+
+.proposal-text{
+    text-align:center;
+    line-height:2;
+    font-size:1.1rem;
+}
+
+.marry{
+    font-size:2.3rem;
+    margin-top:20px;
+    color:#fff4b8;
+}
+
+.footer{
+    text-align:center;
+    margin-top:30px;
+    opacity:.9;
+}
+
+@media(max-width:768px){
+    .title{
+        font-size:3.5rem;
+    }
+
+    .proposal-title{
+        font-size:3rem;
+    }
+
+    .card{
+        padding:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="hearts" id="hearts"></div>
+
+<div class="container">
+
+    <!-- APOLOGY CARD -->
+
+    <div class="card">
+
+        <div class="ring">
+            <span>❤️</span>
+        </div>
+
+        <h1 class="title">I'm Sorry Sakshi</h1>
+
+        <p class="subtitle">
+            A message from my heart to the most important person in my life.
+        </p>
+
+        <div class="message">
+
+            <p>My Love,</p>
+
+            <br>
+
+            <p>
+                I know I made a mistake and I deeply regret it.
+                If I could go back and change it, I would do it in a heartbeat.
+            </p>
+
+            <br>
+
+            <p>
+                I am truly <span class="highlight">sorry</span>.
+                Hurting you was never my intention, and seeing your pain
+                makes me realize how precious you are to me.
+            </p>
+
+            <br>
+
+            <p>
+                You deserve honesty, love, respect, and someone who values
+                your heart every single day.
+            </p>
+
+            <br>
+
+            <p>
+                I cannot erase my mistake, but I promise to learn from it,
+                grow from it, and become a better person because of it.
+            </p>
+            <p>
+                baal tu mala lai lai lai lai avdatis ani tula hurt kelo ki tuzyahoon jast hurt mala hoty
+                jr mi tula traass dila aani mazyamule tuzya dolyat paani aal trrr...
+            </p>
+            <p>
+                tu khupp mast distis pn maza kayam mazak karnya cha swabhav aani chesta karn maap kadn
+                tula yevd hurt hoil vatl navt mala..mala kharach maaf kr baal mi tula lai hurt kel
+            </p>
+            <p>
+                Tu mala kayam mast distis aani mala laii avadtis pn mazya gandit masti aahe
+            </p>
+
+            <div class="promise">
+                <strong>My Promise ❤️</strong><br>
+                I promise to communicate better, love better,
+                and never stop proving how much you mean to me. And I will never disrespect you.
+            </div>
+
+        </div>
+
+        <center>
+            <button class="button" onclick="showMessage()">
+                Can You Give Me One More Chance? ❤️
+            </button>
+
+            <div id="specialMessage" class="hidden">
+                🌹 Thank you for reading this.
+                Every moment with you is precious to me. ❤️
+            </div>
+        </center>
+
+    </div>
+
+   <script>
+
+function showMessage(){
+    document.getElementById("specialMessage").style.display = "block";
+}
+
+function showProposal(){
+    document.getElementById("proposalAnswer").style.display = "block";
+}
+
+const hearts = document.getElementById("hearts");
+
+for(let i=0;i<40;i++){
+
+    const heart = document.createElement("div");
+
+    heart.classList.add("heart");
+    heart.innerHTML = "❤";
+
+    heart.style.left = Math.random()*100 + "%";
+    heart.style.fontSize = (15 + Math.random()*25) + "px";
+    heart.style.animationDuration = (8 + Math.random()*10) + "s";
+    heart.style.animationDelay = Math.random()*5 + "s";
+
+    hearts.appendChild(heart);
+}
+
+</script>
+
+<center>
+
+   
+
+    <button class="button" onclick="window.location.href='apology.html'">
+        Will you give me one chance then click on this ❤️
+    </button>
+
+</center>
+
+
+
+
+</body>
+</html>
